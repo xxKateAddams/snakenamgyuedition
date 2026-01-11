@@ -1,0 +1,71 @@
+@font-face {
+  font-family: 'VCR';
+  src: url('assets/VCROSDMonoNova.ttf');
+}
+
+body {
+  background: #000;
+  color: #ff7fd1;
+  font-family: 'VCR', monospace;
+  text-align: center;
+  margin: 0;
+  overflow: hidden;
+}
+
+canvas {
+  display: block;
+  margin: 40px auto 10px auto;
+  border: 2px solid #ff7fd1;
+  background: url('assets/game_bg.png') center/cover no-repeat;
+  box-shadow: 0 0 15px #ff7fd180;
+}
+
+#info {
+  font-size: 16px;
+  color: #ff7fd1;
+  text-shadow: 0 0 5px #ff7fd1;
+}
+
+.game-window {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.9);
+  border: 2px solid #ff7fd1;
+  padding: 30px;
+  text-align: center;
+  color: #ff7fd1;
+  border-radius: 8px;
+  z-index: 10;
+  font-family: 'VCR', monospace;
+  box-shadow: 0 0 25px #ff7fd180;
+}
+
+.game-window h2 {
+  margin-top: 0;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.game-window button {
+  margin-top: 15px;
+  padding: 10px 24px;
+  background: #ff7fd1;
+  color: #000;
+  border: none;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: 'VCR', monospace;
+  transition: 0.3s;
+}
+
+.game-window button:hover {
+  background: #fff;
+  color: #000;
+}
+
+.hidden {
+  display: none;
+}
